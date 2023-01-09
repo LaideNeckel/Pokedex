@@ -10,6 +10,9 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!--teste favicon-->
+    <link rel="icon" href="data:,">
+
     <!-- Fonte Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +26,7 @@
     <section class= "content">
         <h1> Pokedex </h1>
 
-        <ol class="pokemons">
+        <ol id="pokemonList" class="pokemons">
             <li class="pokemon">
                 <span Class="number">#001</span>
                 <span class="name">Bulbasaur</span>
@@ -41,6 +44,7 @@
     </section>
 
     <!-- Nosso JS-->
+    <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
 </html>
