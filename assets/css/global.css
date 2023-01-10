@@ -25,84 +25,10 @@ body {
     }
     }
 
-/* Usamos o padding para definir esse espaço e o 1 rem para ajustar conforme o tamanho de cada fonte e tela
-daria para usar em pixels também, mas o rem é mais dinâmico*/
-
- .pokemons {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-@media screen and (min-width: 380px) {
-    .pokemons {
-       grid-template-columns: 1fr 1fr;
-    }
-    }
-
-@media screen and (min-width: 576px) {
-    .pokemons {
-       grid-template-columns: 1fr 1fr 1fr;
-    }
-    }
-
-@media screen and (min-width: 992px) {
-    .pokemons {
-       grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    }
 
 
-.pokemon {
-    display: flex;
-    flex-direction:column;
-    margin: .5rem;
-    padding: 2rem 1rem;
-    border-radius: 1rem;
-    background-color: #47ceae;
-}
 
-.pokemon .number {
-    color: black;
-    opacity: 0.3;
-    text-align: right;
-    font-size: .625rem;
-}
 
-.pokemon .name {
-    color: white;
-    margin-bottom: .25rem;
-}
-
-.pokemon .detail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.pokemon .detail .types {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.pokemon .detail .types .type {
-    background-color: #59ddc2;
-    color: white;
-    padding: 1rem 1rem;
-    margin: .125rem;
-    font-size: .825rem;
-    border-radius: 1rem;
-}
-
-.pokemon .detail img {
-    max-width: 100%;
-    height: 100px;
-    align-self:flex-end;
-}
 
 
 
