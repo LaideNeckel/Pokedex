@@ -1,7 +1,7 @@
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 const maxRecords = 1000
-const limit = 10
+const limit = 15;
 let offset = 0;
 
 
@@ -21,6 +21,20 @@ function loadPokemonItens(offset, limit) {
                     <img src="${pokemon.photo}" 
                         alt="${pokemon.name}">
                 </div>
+
+                <hr size="30" width="100%" color="white">
+
+                <div class="moreDetails">
+                        <ol class="ability">Ability: ${pokemon.ability}</ol>
+                        <ol class="hp">HP: ${pokemon.hp}</ol>
+                        <ol class="attack">Attack: ${pokemon.attack}</ol>
+                        <ol class="defense">Defense: ${pokemon.defense}</ol>
+                        <ol class="specialAttack">Special Attack: ${pokemon.specialAttack}</ol>
+                        <ol class="specialDefense">Special Defense: ${pokemon.specialDefense}</ol>
+                        <ol class="speed">Speed: ${pokemon.speed}</ol>
+                        <ol class="height">Height: ${pokemon.height}</ol>
+                        <ol class="weight">Weight: ${pokemon.weight}</ol>
+                    </div>
                 
             </li>
         `).join('')
@@ -44,6 +58,7 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit)
     }
 })
+
 
     
 
