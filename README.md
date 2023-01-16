@@ -1,4 +1,4 @@
-# Olá, seja bem vindo a minha Pokedex! 😊
+# Olá, seja bem vindo a minha Pokedex! 👋
 
 A Pokédex (palavra comum no vocabulário dos amantes de Pokémon) é uma enciclopédia virtual que detém todas as espécies de pokémon. 😉
 
